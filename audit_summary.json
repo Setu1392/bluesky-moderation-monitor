@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-10-07T16:19:59.973788Z",
+  "population": "replies flagged in Sensitive mode while audit mode was on; Strict-mode figures use the subset that was also flagged in Strict mode",
+  "sample_size": 100,
+  "n_reviewed": 100,
+  "n_skipped": 0,
+  "n_unreviewed": 0,
+  "modes": {
+    "sensitive": {
+      "n": 100,
+      "abusive": 17,
+      "profane_only": 33,
+      "not_toxic": 50,
+      "abusive_rate": 0.17,
+      "abusive_ci": [
+        0.10893476059773155,
+        0.25548181233642975
+      ],
+      "offensive_rate": 0.5,
+      "offensive_ci": [
+        0.40382982859014716,
+        0.5961701714098528
+      ]
+    },
+    "strict": {
+      "n": 56,
+      "abusive": 15,
+      "profane_only": 23,
+      "not_toxic": 18,
+      "abusive_rate": 0.26785714285714285,
+      "abusive_ci": [
+        0.1695715866189496,
+        0.3959480518933896
+      ],
+      "offensive_rate": 0.6785714285714286,
+      "offensive_ci": [
+        0.548223941560039,
+        0.7859917211227772
+      ]
+    }
+  },
+  "caveats": [
+    "one reviewer",
+    "blind to model scores",
+    "no parent post shown for context",
+    "precision only; says nothing about what the model misses"
+  ]
+}

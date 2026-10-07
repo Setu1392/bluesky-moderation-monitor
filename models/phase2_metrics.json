@@ -1,0 +1,239 @@
+{
+  "settings": {
+    "max_len": 240,
+    "vocab_size": 30000,
+    "epochs": 3,
+    "batch_size": 128,
+    "n_train": null,
+    "n_val": null,
+    "n_test": null,
+    "out_dir": "models",
+    "smoke": false
+  },
+  "epochs_run": 3,
+  "history": {
+    "loss": [
+      0.08717726171016693,
+      0.04808356612920761,
+      0.04305693134665489
+    ],
+    "pr_auc": [
+      0.3447706997394562,
+      0.5123931765556335,
+      0.5425066947937012
+    ],
+    "roc_auc": [
+      0.8892545700073242,
+      0.9616462588310242,
+      0.9712172150611877
+    ],
+    "val_loss": [
+      0.05120507627725601,
+      0.048559967428445816,
+      0.04953813925385475
+    ],
+    "val_pr_auc": [
+      0.5197234749794006,
+      0.5284772515296936,
+      0.5304455161094666
+    ],
+    "val_roc_auc": [
+      0.9664084911346436,
+      0.9695124626159668,
+      0.9660008549690247
+    ]
+  },
+  "test_ranking": [
+    {
+      "label": "toxic",
+      "positives": 1544,
+      "roc_auc": 0.9755086852448431,
+      "pr_auc": 0.8777401800499705
+    },
+    {
+      "label": "severe_toxic",
+      "positives": 156,
+      "roc_auc": 0.9900823978788793,
+      "pr_auc": 0.4546702516639638
+    },
+    {
+      "label": "obscene",
+      "positives": 815,
+      "roc_auc": 0.9895213281643425,
+      "pr_auc": 0.8840534475667817
+    },
+    {
+      "label": "threat",
+      "positives": 48,
+      "roc_auc": 0.944411271736853,
+      "pr_auc": 0.043364646955583175
+    },
+    {
+      "label": "insult",
+      "positives": 761,
+      "roc_auc": 0.9835591124432627,
+      "pr_auc": 0.7772200485277994
+    },
+    {
+      "label": "identity_hate",
+      "positives": 145,
+      "roc_auc": 0.9590001242975552,
+      "pr_auc": 0.1518861071838757
+    }
+  ],
+  "test_f1_operating_point": [
+    {
+      "label": "toxic",
+      "threshold": 0.3983083963394165,
+      "tp": 1204,
+      "fp": 311,
+      "fn": 340,
+      "flagged": 1515,
+      "precision": 0.7947194719471947,
+      "recall": 0.7797927461139896,
+      "f1": 0.7871853546910755
+    },
+    {
+      "label": "severe_toxic",
+      "threshold": 0.17046315968036652,
+      "tp": 106,
+      "fp": 169,
+      "fn": 50,
+      "flagged": 275,
+      "precision": 0.38545454545454544,
+      "recall": 0.6794871794871795,
+      "f1": 0.4918793503480278
+    },
+    {
+      "label": "obscene",
+      "threshold": 0.3781176209449768,
+      "tp": 659,
+      "fp": 176,
+      "fn": 156,
+      "flagged": 835,
+      "precision": 0.7892215568862275,
+      "recall": 0.8085889570552147,
+      "f1": 0.7987878787878787
+    },
+    {
+      "label": "threat",
+      "threshold": 0.032291632145643234,
+      "tp": 16,
+      "fp": 265,
+      "fn": 32,
+      "flagged": 281,
+      "precision": 0.05693950177935943,
+      "recall": 0.3333333333333333,
+      "f1": 0.0972644376899696
+    },
+    {
+      "label": "insult",
+      "threshold": 0.3767503499984741,
+      "tp": 601,
+      "fp": 281,
+      "fn": 160,
+      "flagged": 882,
+      "precision": 0.68140589569161,
+      "recall": 0.7897503285151117,
+      "f1": 0.7315885575167377
+    },
+    {
+      "label": "identity_hate",
+      "threshold": 0.11102449893951416,
+      "tp": 78,
+      "fp": 382,
+      "fn": 67,
+      "flagged": 460,
+      "precision": 0.16956521739130434,
+      "recall": 0.5379310344827586,
+      "f1": 0.2578512396694215
+    }
+  ],
+  "test_high_precision_operating_point": [
+    {
+      "label": "toxic",
+      "threshold": 0.6417628526687622,
+      "tp": 1019,
+      "fp": 107,
+      "fn": 525,
+      "flagged": 1126,
+      "precision": 0.9049733570159858,
+      "recall": 0.6599740932642487,
+      "f1": 0.7632958801498128
+    },
+    {
+      "label": "severe_toxic",
+      "threshold": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 156,
+      "flagged": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+    },
+    {
+      "label": "obscene",
+      "threshold": 0.6963404417037964,
+      "tp": 520,
+      "fp": 54,
+      "fn": 295,
+      "flagged": 574,
+      "precision": 0.9059233449477352,
+      "recall": 0.6380368098159509,
+      "f1": 0.7487401007919366
+    },
+    {
+      "label": "threat",
+      "threshold": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 48,
+      "flagged": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+    },
+    {
+      "label": "insult",
+      "threshold": 0.8310439586639404,
+      "tp": 128,
+      "fp": 12,
+      "fn": 633,
+      "flagged": 140,
+      "precision": 0.9142857142857143,
+      "recall": 0.16819973718791065,
+      "f1": 0.28412874583795783
+    },
+    {
+      "label": "identity_hate",
+      "threshold": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 145,
+      "flagged": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+    }
+  ],
+  "test_any_label_f1_thresholds": {
+    "tp": 1250,
+    "fp": 265,
+    "fn": 373,
+    "flagged": 1515,
+    "precision": 0.8250825082508251,
+    "recall": 0.7701786814540974,
+    "f1": 0.7966857871255577
+  },
+  "test_any_label_high_precision_thresholds": {
+    "tp": 1055,
+    "fp": 71,
+    "fn": 568,
+    "flagged": 1126,
+    "precision": 0.9369449378330373,
+    "recall": 0.6500308071472581,
+    "f1": 0.7675518370316479
+  },
+  "reload_max_abs_diff": 0.0
+}

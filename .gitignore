@@ -1,0 +1,24 @@
+# Environment / caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Downloaded and generated data (reproducible by running the pipeline)
+data/raw/
+processed/
+
+# Databases. NEVER commit these: the audit database holds comment text until you purge it,
+# and the stream database holds one row per scored reply.
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Smoke-test output
+models_smoke/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

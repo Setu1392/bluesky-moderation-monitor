@@ -1,0 +1,31 @@
+{
+  "label_cols": [
+    "toxic",
+    "severe_toxic",
+    "obscene",
+    "threat",
+    "insult",
+    "identity_hate"
+  ],
+  "model_file": "tox_model.keras",
+  "f1_threshold": {
+    "toxic": 0.3983083963394165,
+    "severe_toxic": 0.17046315968036652,
+    "obscene": 0.3781176209449768,
+    "threat": 0.032291632145643234,
+    "insult": 0.3767503499984741,
+    "identity_hate": 0.11102449893951416
+  },
+  "high_precision_threshold": {
+    "toxic": 0.6417628526687622,
+    "severe_toxic": null,
+    "obscene": 0.6963404417037964,
+    "threat": null,
+    "insult": 0.8310439586639404,
+    "identity_hate": null
+  },
+  "precision_target": 0.9,
+  "tuned_on": "validation split",
+  "max_len": 240,
+  "vocab_size": 30000
+}

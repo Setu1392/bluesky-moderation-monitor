@@ -1,0 +1,8 @@
+# Developed and tested on Windows, Python 3.10, CPU only (no GPU).
+tensorflow>=2.21        # brings Keras 3 and numpy
+pandas>=2.3
+numpy>=2.0
+scikit-learn>=1.7
+requests>=2.31          # dataset download
+websockets>=13          # Bluesky Jetstream (sync client)
+dash>=3.0               # dashboard (brings plotly and Flask)
